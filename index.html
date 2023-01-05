@@ -7,7 +7,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script src='main.js'></script>
+    <script type="text/javascript" src="index.js"></script>
+
 </head>
 
 <body>
@@ -18,188 +19,240 @@
     </header>
 
     <main>
-        <section>
+        <section class="prato">
             <h1>Primeiro, seu prato</h1>
             <ul>
-                <li>
+                <li class="acaraje" onclick="selecionarPrato('.acaraje')">
                     <figure>
                         <img src="img/prato_principal/acaraje.jpg" alt="acaraje">
                     </figure>
                     <figcaption>Acarajé</figcaption>
                     <p>Acompanha: camarão, vatapá, caruru, vinagrete</p>
-                    <h3>R$ 20,00</h3>
+                    <span>
+                        <h3>R$ 20,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="baiao" onclick="selecionarPrato('.baiao')">
                     <figure>
                         <img src="img/prato_principal/baiao-de-dois.JPG" alt="baiao">
                     </figure>
                     <figcaption>Baião de dois</figcaption>
                     <p>Baião de carne de sol com fritas de acompanhamento</p>
-                    <h3>R$ 25,00</h3>
+                    <span>
+                        <h3>R$ 25,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="feijoada" onclick="selecionarPrato('.feijoada')">
                     <figure>
                         <img src="img/prato_principal/feijoada.jpeg" alt="feijoada">
                     </figure>
                     <figcaption>Feijoada</figcaption>
                     <p>Feijoada com de arroz branco, couve refolgada, farofa</p>
-                    <h3>R$ 22,00</h3>
+                    <span>
+                        <h3>R$ 22,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="lasanha" onclick="selecionarPrato('.lasanha')">
                     <figure>
                         <img src="img/prato_principal/lasanha-a-bolonhensa-com-bacon.jpg" alt="lasanha">
                     </figure>
                     <figcaption>Lasanha</figcaption>
                     <p>Lasanha à bolonhensa com recheio de bacon</p>
-                    <h3>R$ 19,00</h3>
+                    <span>
+                        <h3>R$ 19,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="risoto" onclick="selecionarPrato('.risoto')">
                     <figure>
                         <img src="img/prato_principal/risoto-de-gorgonzola.jpg" alt="risoto">
                     </figure>
                     <figcaption>Risoto de Gorgonzola</figcaption>
                     <p>Um pouco de batata, um pouco de salada</p>
-                    <h3>R$ 20,00</h3>
+                    <span>
+                        <h3>R$ 20,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="tapioca" onclick="selecionarPrato('.tapioca')">
                     <figure>
                         <img src="img/prato_principal/tapioca-de-carnedesol-com-queijo.jpg" alt="tapioca">
                     </figure>
                     <figcaption>Deliciosa Tapioca</figcaption>
                     <p>Tapioca de carne de sol assada na brasa com queijo coalho</p>
-                    <h3>R$ 17,00</h3>
+                    <span>
+                        <h3>R$ 17,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li> 
             </ul>
         </section>
         
-        <section>
+        <section class="bebida">
             <h1>Agora, sua bebida</h1>
             <ul>
-                <li>
+                <li class="coca-zero" onclick="selecionarBebida('.coca-zero')">
                     <figure>
                         <img src="img/bebidas/coca-zero.jpg" alt="coca zero">
                     </figure>
                     <figcaption>Coca-cola zero</figcaption>
                     <p>Lata 350ml</p>
-                    <h3>R$ 4,99</h3>
+                    <span>
+                        <h3>R$ 4,99</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="coca" onclick="selecionarBebida('.coca')">
                     <figure>
                         <img src="img/bebidas/coca.jpg" alt="coca-cola">
                     </figure>
                     <figcaption>Coca-cola</figcaption>
                     <p>Lata 350ml</p>
-                    <h3>R$ 4,99</h3>
+                    <span>
+                        <h3>R$ 4,99</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="guarana" onclick="selecionarBebida('.guarana')">
                     <figure>
                         <img src="img/bebidas/guarana.jpg" alt="guaraná">
                     </figure>
                     <figcaption>Guaraná Antártica</figcaption>
                     <p>Lata 350ml</p>
-                    <h3>R$ 4,99</h3>
+                    <span>
+                        <h3>R$ 4,99</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="soda" onclick="selecionarBebida('.soda')">
                     <figure>
-                        <img src="img/bebidas/soda.JPG" alt="coca-cola">
+                        <img src="img/bebidas/soda.JPG" alt="soda">
                     </figure>
                     <figcaption>Soda Limonada</figcaption>
                     <p>Lata 350ml</p>
-                    <h3>R$ 4,99</h3>
+                    <span>
+                        <h3>R$ 4,99</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="abacaxi" onclick="selecionarBebida('.abacaxi')">
                     <figure>
-                        <img src="img/bebidas/suco-abacaxi.jpg" alt="suco acacaxi">
+                        <img src="img/bebidas/suco-abacaxi.jpg" alt="suco abacaxi">
                     </figure>
                     <figcaption>Suco de abacaxi</figcaption>
                     <p>Copo 400ml</p>
-                    <h3>R$ 5,50</h3>
+                    <span>
+                        <h3>R$ 5,50</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="acerola" onclick="selecionarBebida('.acerola')">
                     <figure>
                         <img src="img/bebidas/suco-acerola.jfif" alt="suco acerola">
                     </figure>
                     <figcaption>Suco de acerola</figcaption>
                     <p>Cop0 400ml</p>
-                    <h3>R$ 5,50</h3>
+                    <span>
+                        <h3>R$ 5,50</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="limao" onclick="selecionarBebida('.limao')">
                     <figure>
-                        <img src="img/bebidas/suco-limao.jfif" alt="suco limão">
+                        <img src="img/bebidas/suco-limao.jfif" alt="suco limao">
                     </figure>
                     <figcaption>Suco de limão</figcaption>
                     <p>Copo 400ml</p>
-                    <h3>R$ 5,50</h3>
+                    <span>
+                        <h3>R$ 5,50</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="tamarindo" onclick="selecionarBebida('.tamarindo')">
                     <figure>
                         <img src="img/bebidas/Suco-tamarindo.jpg" alt="suco tamarindo">
                     </figure>
                     <figcaption>Suco de tamarindo</figcaption>
                     <p>Copo 400ml</p>
-                    <h3>R$ 5,50</h3>
+                    <span>
+                        <h3>R$ 5,50</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
             </ul>
         </section>
 
-        <section>
+        <section class="sobremesa">
             <h1>Por fim, sua sobremesa</h1>
             <ul>
-                <li>
+                <li class="bolo-de-rolo" onclick="selecionarSobremesa('.bolo-de-rolo')">
                     <figure>
                         <img src="img/sobremesa/bolo-de-rolo.jpg" alt="bolo-de-rolo">
                     </figure>
                     <figcaption>Bolo de rolo</figcaption>
                     <p>Fatia. Aprox.: 200g</p>
-                    <h3>R$ 12,00</h3>
+                    <span>
+                        <h3>R$ 12,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="cheescake" onclick="selecionarSobremesa('.cheescake')">
                     <figure>
                         <img src="img/sobremesa/cheescake.jpg" alt="cheescake">
                     </figure>
                     <figcaption>Cheescake</figcaption>
                     <p>Fatia. Aprox.: 200g</p>
-                    <h3>R$ 17,00</h3>
+                    <span>
+                        <h3>R$ 17,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="manjar" onclick="selecionarSobremesa('.manjar')">
                     <figure>
                         <img src="img/sobremesa/manjar-branco.jpg" alt="manjar">
                     </figure>
                     <figcaption>Manjar branco</figcaption>
                     <p>Fatia. Aprox.: 150g</p>
-                    <h3>R$ 10,00</h3>
+                    <span>
+                        <h3>R$ 10,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="pave" onclick="selecionarSobremesa('.pave')">
                     <figure>
-                        <img src="img/sobremesa/manjar-branco.jpg" alt="manjar">
-                    </figure>
-                    <figcaption>Manjar branco</figcaption>
-                    <p>Fatia. Aprox.: 150g</p>
-                    <h3>R$ 10,00</h3>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/sobremesa/pave-frutas-vermelhas.jfif" alt="pavé">
+                        <img src="img/sobremesa/pave-frutas-vermelhas.jfif" alt="pave">
                     </figure>
                     <figcaption>Pavé especial</figcaption>
                     <p>Fatia. Aprox.: 200g</p>
-                    <h3>R$ 16,00</h3>
+                    <span>
+                        <h3>R$ 16,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="pudin" onclick="selecionarSobremesa('.pudin')">
                     <figure>
                         <img src="img/sobremesa/pudim.jpg" alt="pudim">
                     </figure>
                     <figcaption>Pudim de leite</figcaption>
                     <p>Fatia. Aprox.: 150g</p>
-                    <h3>R$ 10,00</h3>
+                    <span>
+                        <h3>R$ 10,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
-                <li>
+                <li class="torta-holandesa" onclick="selecionarSobremesa('.torta-holandesa')">
                     <figure>
                         <img src="img/sobremesa/torta-holandesa.jpg" alt="torta-holandesa">
                     </figure>
                     <figcaption>Torta holandesa</figcaption>
                     <p>Fatia. Aprox.: 200g</p>
-                    <h3>R$ 19,00</h3>
+                    <span>
+                        <h3>R$ 19,00</h3>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                    </span>
                 </li>
             </ul>
         </section>
@@ -211,6 +264,6 @@
         </div>
     </div>
 
-    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
