@@ -121,6 +121,7 @@ main h3{
 li span{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -139,21 +140,15 @@ li span{
     background-color: #FFFFFF;
 }
 
-.barra-inferior div{
+.barra-inferior button{
     display: flex;
-    align-content: center;
     justify-content: center;
     align-items: center;
-    background-color: #CBCBCB;
+    border: none;
     border-radius: 50px;
     height: 61px;
     width: 100%;
     margin: 0 25px;
-}
-
-.barra-inferior p{
-    width: 200px;
-    text-align: center;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 20px;
@@ -173,4 +168,12 @@ ion-icon{
 
 .selecionado ion-icon{
     display: flex;
+}
+
+.pedidoDesativado{
+    background-color: #CBCBCB;
+}
+.pedidoAtivo{
+    background-color: #32B72F;
+    cursor: pointer;
 }
