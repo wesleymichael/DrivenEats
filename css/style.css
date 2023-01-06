@@ -118,7 +118,7 @@ main h3{
     color: #000000;
 }
 
-li span{
+li div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,6 +154,7 @@ li span{
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.018em;
+    background-color: #CBCBCB;
 }
 
 ion-icon{
