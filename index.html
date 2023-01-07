@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
 </head>
 
@@ -258,8 +258,38 @@
         </section>
     </main>
 
+    <div class="backgroundNovo">
+        <div class="tela-confirma">
+            <h2>Confirme seu pedido</h2>
+            <div>
+                <h3>Frango Yin Yang</h3>
+                <p>14,90</p>
+            </div>
+            <div>
+                <h3>Frango Yin Yang</h3>
+                <p>4,90</p>
+            </div>
+            <div>
+                <h3>Frango Yin Yang</h3>
+                <p>4,90</p>
+            </div>
+            <div>
+                <strong>TOTAL</strong>
+                <strong><p>RS 27,70</p></strong>
+            </div>
+            
+            <a href="">
+                <button onclick="pedidoVerificado()">
+                    Tudo certo, pode pedir!
+                </button>
+            </a>
+            
+            <span onclick="cancelarPedido()">Cancelar</span>
+        </div>
+    </div>
+
     <div class="barra-inferior">
-        <button type="button">
+        <button onclick="itensEscolhidos(); telaConfirma();" type="button">
             Selecione os 3 itens<br> para fechar o pedido
         </button>
     </div>
