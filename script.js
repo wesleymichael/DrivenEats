@@ -22,6 +22,7 @@ function ativaConfirmarPedido(){
                 botao.innerHTML = 'Fechar pedido';
                 botao.style.backgroundColor = '#32B72F';
                 botao.style.cursor = 'pointer';
+                botao.removeAttribute('disabled');
             }   
         }    
     }
@@ -94,5 +95,3 @@ function pedidoVerificado(){
     const link = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
     document.querySelector('.tela-confirma a').href = link;
 }
-
-
